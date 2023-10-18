@@ -1,6 +1,6 @@
 import Character from "../Character/Character.js";
 import { type FighterData } from "../../types.js";
-export class Fighter extends Character {
+class Fighter extends Character {
   weapon;
   dexterity;
 
@@ -26,3 +26,5 @@ export class Fighter extends Character {
     return dexterity;
   }
 }
+
+export default Fighter;
