@@ -2,10 +2,11 @@ import type Character from "./Components/Character/Character.js";
 import type Fighter from "./Components/Fighter/Fighter.js";
 
 export interface CharacterData {
+  id: number;
   name: string;
   family: string;
   age: number;
-  imageURL: string;
+  imageSource: string;
 }
 
 export interface KingData extends CharacterData {
