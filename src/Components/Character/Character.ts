@@ -1,19 +1,21 @@
-import type CharacterData from "../../types/types";
+import type { CharacterData } from "../../types";
 
-class Character {
-  isAlive: boolean;
-  series: string;
-  characterData;
+abstract class Character {
+  protected isAlive: boolean;
+  protected series: string;
+  protected characterData;
 
-  constructor(characterData: CharacterData) {
-    this.characterData = characterData;
+  constructor(data: CharacterData) {
+    this.characterData = data;
+    this.isAlive = true;
+    this.series = "Game of Thrones";
   }
 
-  communicate() {
+  protected communicate(): string {
     return `${this.characterData.name} says: `;
   }
 
-  die() {
+  protected die(): void {
     this.isAlive = false;
   }
 }
