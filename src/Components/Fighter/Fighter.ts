@@ -1,12 +1,11 @@
 import Character from "../Character/Character.js";
-import type CharacterData from "../../types.js";
-
+import { type FighterData } from "../../types.js";
 export class Fighter extends Character {
-  weapon: string;
-  dexterity: number;
+  weapon;
+  dexterity;
 
-  constructor(characterData: CharacterData, weapon: string, dexterity: number) {
-    super(characterData);
+  constructor(data: FighterData, weapon: string, dexterity: number) {
+    super(data);
     this.weapon = weapon;
     this.dexterity = this.filterDexterity(dexterity);
   }
