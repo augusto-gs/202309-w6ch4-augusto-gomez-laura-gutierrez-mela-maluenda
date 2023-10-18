@@ -1,9 +1,9 @@
-import type { CharacterData } from "../../types";
+import type { CharacterData } from "../../types.js";
 
 abstract class Character {
+  public characterData;
   protected isAlive: boolean;
   protected series: string;
-  protected characterData;
 
   constructor(data: CharacterData) {
     this.characterData = data;
