@@ -1,10 +1,10 @@
 import Character from "../Character/Character.js";
-import { type KingData } from "../../types.js";
+import type CharacterData from "../../types.js";
 
 class King extends Character {
-  yearsOfReign;
+  yearsOfReign: number;
 
-  constructor(data: KingData, yearsOfReign: number) {
+  constructor(data: CharacterData, yearsOfReign: number) {
     super(data);
     this.yearsOfReign = yearsOfReign;
   }
