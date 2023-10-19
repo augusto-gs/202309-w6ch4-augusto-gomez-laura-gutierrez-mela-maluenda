@@ -1,5 +1,6 @@
 import Component from "../component/component.js";
 import type CharacterData from "../../types.js";
+import { characters } from "../characters/characters.js";
 
 class CharacterCard extends Component {
   characterData;
@@ -30,7 +31,22 @@ class CharacterCard extends Component {
                   </li>
                 </ul>
               </div>
+                <div class="character__overlay">
+                <ul class="list-unstyled">
+                  <li>Years of Reign: X</li>
+                  <li>Weapon: XXX</li>
+                  <li>Dexterity: X</li>
+                  <li>Kiss Ass level: X</li>
+                  <li>Advises to: X</li>
+                  <li>Serves to: X</li>
+                </ul>
+                <div class="character__actions">
+                  <button class="character__action btn">speak</button>
+                  <button class="character__action btn">die</button>
+                </div>
+              </div>
             </div>
+             <i class="emoji"></i>
           </div>
         </article>
     `;
