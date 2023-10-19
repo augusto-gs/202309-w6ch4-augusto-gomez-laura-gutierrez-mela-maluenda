@@ -1,14 +1,15 @@
 import Character from "../Character/Character.js";
-import { type AdvisorData } from "../../types.js";
+import type CharacterData from "../../types.js";
+import Fighter from "../Fighter/Fighter.js";
 
 class Advisor extends Character {
-  advises;
+  advises: Character;
 
-  constructor(data: AdvisorData) {
+  constructor(data: CharacterData, advises: Fighter) {
     super(data);
 
-    if (data.advises instanceof Character) {
-      this.advises = data.advises;
+    if (this.advises instanceof Fighter) {
+      this.advises = advises;
     }
   }
 
