@@ -2,7 +2,7 @@ import type CharacterData from "../../types.js";
 
 abstract class Character {
   public characterData;
-  protected isAlive: boolean;
+  public isAlive: boolean;
   protected series: string;
 
   constructor(data: CharacterData) {
