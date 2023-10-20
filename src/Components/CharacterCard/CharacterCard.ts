@@ -1,11 +1,9 @@
 import Component from "../component/component.js";
-import type CharacterData from "../../types.js";
-import { characters } from "../characters/characters.js";
-import King from "../King/King.js";
-import Advisor from "../Advisor/Advisor.js";
-import { Squire } from "../Squire/Squire.js";
-import Fighter from "../Fighter/Fighter.js";
-import Character from "../Character/Character.js";
+import type King from "../King/King.js";
+import type Advisor from "../Advisor/Advisor.js";
+import type { Squire } from "../Squire/Squire.js";
+import type Fighter from "../Fighter/Fighter.js";
+import type Character from "../Character/Character.js";
 
 class CharacterCard extends Component {
   data: Character | Fighter | Squire | King | Advisor;
@@ -38,7 +36,7 @@ class CharacterCard extends Component {
               </div>
                 <div class="character__overlay">
                 <ul class="list-unstyled">
-                  <li>Years of Reign: X</li>
+                  <li>Years of Reign: </li>
                   <li>Weapon: XXX</li>
                   <li>Dexterity: X</li>
                   <li>Kiss Ass level: X</li>
